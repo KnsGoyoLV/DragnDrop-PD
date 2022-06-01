@@ -1,9 +1,13 @@
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagment;
+using UnityEngine.SceneManagement;
 
-public class Izvelne1Script : MonoBehavior {
-    public void uzIvelni{
-        Scene.Manager.LoadScene("MainStart",LoadSceneMode.Single);
-     }
+public class IzvelneiScript : MonoBehaviour
+{
+    public void uzIzvelnei()
+    {
+        SceneManager.LoadScene("MainStart", LoadSceneMode.Single);
+    }
 }
+   
