@@ -59,37 +59,37 @@ public class nomesanasvieta : MonoBehaviour, IDropHandler
                     atskaņo atbilstošo skaņu*/
 					switch (notikums.pointerDrag.tag)
 					{
-					case "Atkritumi":
+					case "Police":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[1]);
 						break;
-					case "Atrie":
+					case "Trac":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[2]);
 						break;
-					case "Buss":
+					case "b2":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[3]);
 						break;
-					case "Passarati":
+					case "Autobuss":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[4]);
 						break;
-					case "Cements":
+					case "Ambulance":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[5]);
 						break;
-					case "BMW":
+					case "GarbageTruck":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[6]);
 						break;
-					case "Eskavators":
+					case "cement":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[7]);
 						break;
-					case "POPO":
+					case "firetruck":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[9]);
 						break;
-					case "DzeltensTraktors":
+					case "ESC":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[10]);
 						break;
-					case "TraktorsArPiekabi":
+					case "TRacYellow":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[11]);
 						break;
-					case "Ugunsdzeseji":
+					case "e47":
 						objektuSkripts.skanasAvots.PlayOneShot(objektuSkripts.skanaKoAtskanot[14]);
 						break;
 					}
@@ -106,37 +106,34 @@ public class nomesanasvieta : MonoBehaviour, IDropHandler
                  * objekt uaizbīda uz tā sākotnējām koordinātām*/
 				switch (notikums.pointerDrag.tag)
 				{
-				case "Atkritumi":
+				case "GarbageTruck":
 					objektuSkripts.atkritumuMasina.GetComponent<RectTransform>().localPosition = objektuSkripts.atkrKoord;
 					break;
-				case "Atrie":
+				case "Ambulance":
 					objektuSkripts.atroMasina.GetComponent<RectTransform>().localPosition = objektuSkripts.atroKoord;
 					break;
-				case "Buss":
+				case "Autobuss":
 					objektuSkripts.autobuss.GetComponent<RectTransform>().localPosition = objektuSkripts.bussKoord;
 					break;
-				case "Passarati":
-					objektuSkripts.vieglamasina.GetComponent<RectTransform>().localPosition = objektuSkripts.vieglamasinaKoord;
-					break;
-				case "Cements":
+				case "cement":
 					objektuSkripts.cementaMasina.GetComponent<RectTransform>().localPosition = objektuSkripts.cemexKoord;
 					break;
-				case "BMW":
+				case "e47":
 					objektuSkripts.e46.GetComponent<RectTransform>().localPosition = objektuSkripts.e46Koord;
 					break;
-				case "Eskavators":
+				case "ESC":
 					objektuSkripts.eskavators.GetComponent<RectTransform>().localPosition = objektuSkripts.eskavatorsKoord;
 					break;
-				case "POPO":
+				case "Police":
 					objektuSkripts.policija.GetComponent<RectTransform>().localPosition = objektuSkripts.policijaKoord;
 					break;
-				case "DzeltensTraktors":
+				case "TRacYellow":
 					objektuSkripts.dzeltenaisTraktors.GetComponent<RectTransform>().localPosition = objektuSkripts.dzTraktorsKoord;
 					break;
-				case "TraktorsArPiekabi":
+				case "Trac":
 					objektuSkripts.traktorsArPiekabi.GetComponent<RectTransform>().localPosition = objektuSkripts.tArPiekabiKoord;
 					break;
-				case "Ugunsdzeseji":
+				case "firetruck":
 					objektuSkripts.ugunsdzeseji.GetComponent<RectTransform>().localPosition = objektuSkripts.ugunsdzesejiKoord;
 					break;
 				default:

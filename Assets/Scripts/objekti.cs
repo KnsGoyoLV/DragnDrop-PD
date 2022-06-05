@@ -18,7 +18,6 @@ public class objekti : MonoBehaviour
 
     public GameObject autobuss;
 
-    public GameObject vieglamasina;
 
     public GameObject cementaMasina;
 
@@ -30,8 +29,6 @@ public class objekti : MonoBehaviour
     [HideInInspector]
 	public Vector2 bussKoord;
 
-	[HideInInspector]
-	public Vector2 vieglamasinaKoord;
 
 	[HideInInspector]
 	public Vector2 cemexKoord;
@@ -76,7 +73,6 @@ public class objekti : MonoBehaviour
 		atkrKoord = atkritumuMasina.GetComponent<RectTransform>().localPosition;
         atroKoord = atroMasina.GetComponent<RectTransform>().localPosition;
         bussKoord = autobuss.GetComponent<RectTransform>().localPosition;
-        vieglamasinaKoord = vieglamasina.GetComponent<RectTransform>().localPosition;
         cemexKoord = cementaMasina.GetComponent<RectTransform>().localPosition;
         e46Koord = e46.GetComponent<RectTransform>().localPosition;
         eskavatorsKoord = eskavators.GetComponent<RectTransform>().localPosition;
