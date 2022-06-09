@@ -31,7 +31,7 @@ public class objektutransformesana : MonoBehaviour
                 if (objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x > 0.35)
                 {
                     objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().localScale =
-                        new Vector2(objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x - 0.001f,
+                        new Vector2(objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x - 0.05f,
                         objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.y);
                 }
             }
@@ -42,7 +42,7 @@ public class objektutransformesana : MonoBehaviour
                 if (objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x < 0.9)
                 {
                     objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().localScale =
-                        new Vector2(objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x + 0.001f,
+                        new Vector2(objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x + 0.05f,
                         objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.y);
                 }
             }
@@ -54,7 +54,7 @@ public class objektutransformesana : MonoBehaviour
                 {
                     objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().localScale =
                         new Vector2(objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x,
-                        objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.y + 0.001f);
+                        objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.y + 0.05f);
                 }
             }
 
@@ -65,7 +65,7 @@ public class objektutransformesana : MonoBehaviour
                 {
                     objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().localScale =
                         new Vector2(objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.x,
-                        objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.y - 0.001f);
+                        objektuSkripts.pedejaisVilktais.GetComponent<RectTransform>().transform.localScale.y - 0.05f);
                 }
 			}
         }
