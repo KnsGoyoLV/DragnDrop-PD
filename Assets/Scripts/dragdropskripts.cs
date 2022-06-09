@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-
+using UnityEngine.UI;
 
 public class dragdropskripts : MonoBehaviour, IPointerDownHandler, IEventSystemHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
 {
@@ -15,6 +15,8 @@ public class dragdropskripts : MonoBehaviour, IPointerDownHandler, IEventSystemH
 
 	//Vilktā objekta atrašanās vietas koordinātu maiņai
 	private RectTransform velkObjRectTransf;
+	
+	
 	
 	private void Awake()
 	{
@@ -68,11 +70,27 @@ public class dragdropskripts : MonoBehaviour, IPointerDownHandler, IEventSystemH
 			           /*Ja ojbkets nolikts pareizajā vietā, izmērā, rotācijā, tad
             pēdējo vilkto attīra*/
 			objektuSkripts.pedejaisVilktais = null;
-		//	pareiziNomestoSkaits++;
+			pareiziNomestoSkaits++;
 		}
 		        /*Ja viens objekts nomests pareizajā vietā, tad lai varētu turpināt
         pārvietot pārējos objektus*/
 		objektuSkripts.vaiIstajaVIeta = false;
 	}
-	//public int pareiziNomestoSkaits;
+	public int pareiziNomestoSkaits;
+	
+	public GameObject EndPic;
+	
+	
+	public void gameEnd(){
+	
+		if(pareiziNomestoSkaits == 11 ){		
+		  EndPic.SetActive(1);	
+		  
+		}
+		else{
+		}
+	
+	
+	}
+	
 }
